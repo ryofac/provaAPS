@@ -8,4 +8,6 @@ public class Carrinho {
     [ForeignKey("Usuario")]
     public int UsuarioId {get; set;}
     public virtual Usuario Usuario {get; set;}
+    public virtual ICollection<Produto> Produtos {get; set;}
+
 }
